@@ -8,14 +8,17 @@ create file (README.md)
 git add file
 git commit -m "<message>"
 
-<add origin to repo>
-git remote add origin git@github.com:<username>/<reponame>.git
-
 <creating repo with github api and using curl>
 curl -u '<user>' https://api.github.com/user/repos -d '{"name":"<repo>","description":"<text>"}'
 
-<another option of adding origin to repo if previous option was not used, needs to have used curl previously>
+<add origin to repo>
+git remote add origin git@github.com:<username>/<reponame>.git
+
+<another option of adding origin to repo if previous option was not used>
 git remote add origin https://github.com/myuser/myreponame
+
+new branch
+git push -u <shortname> <branchname>
 
 example:
 git remote add origin git@github.com:myuser/myreponame.git
@@ -25,3 +28,5 @@ curl -u 'myuser' https://api.github.com/user/repos -d '{"name":"my_repo_name_is>
 or
 
 git remote add origin https://github.com/myuser/myreponame
+
+git push -u origin master
