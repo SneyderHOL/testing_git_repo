@@ -75,13 +75,13 @@ npm start
 ```
 Now you can start using the API with the following endpoints:
 
-/tolls
-/vehicles
-/routes/tolls
+- /tolls
+- /vehicles
+- /routes/tolls
 
 You can check the API documentation within a browser in:
 
-/api-docs
+- /api-docs
 
 
 ## Built with 🛠️
