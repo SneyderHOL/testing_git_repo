@@ -16,7 +16,7 @@ Screenshot:
 [SmartRoute API](https://api.fulldevs.software): API URL
 
 
-Web app implementing the main service*:
+*Web app implementing the main service:
 
 ![](img/webapp.png)
 
@@ -43,7 +43,8 @@ Before starting, it is necessary to have already installed and configured in you
   - Redis ver. 6.0.8+ (running on port 6379)
   - MongoDB ver. 4.2.10+
   
-Google Maps and OpenRouteService Maps API KEY's. Check these pages for more information about API KEY's:
+Google Maps and OpenRouteService Maps API KEY's.
+Check these pages for more information about API KEY's:
 
 - https://cloud.google.com/maps-platform/
 - https://openrouteservice.org/
@@ -73,11 +74,13 @@ Start the application with:
 npm start
 ```
 Now you can start using the API with the following endpoints:
+
 /tolls
 /vehicles
 /routes/tolls
 
 You can check the API documentation within a browser in:
+
 /api-docs
 
 
