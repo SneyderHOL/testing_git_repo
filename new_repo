@@ -7,6 +7,7 @@ git init
 create file (README.md)
 git add file
 git commit -m "<message>"
+git branch -M main
 
 <creating repo with github api and using curl>
 curl -u '<user>' https://api.github.com/user/repos -d '{"name":"<repo>","description":"<text>"}'
