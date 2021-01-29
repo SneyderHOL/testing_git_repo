@@ -12,21 +12,15 @@ git commit -m "<message>"
 curl -u '<user>' https://api.github.com/user/repos -d '{"name":"<repo>","description":"<text>"}'
 
 <add origin to repo>
-git remote add origin git@github.com:<username>/<reponame>.git
-
-<another option of adding origin to repo if previous option was not used>
 git remote add origin https://github.com/myuser/myreponame
 
-new branch
+<upload branch>
 git push -u <shortname> <branchname>
 
 example:
-git remote add origin git@github.com:myuser/myreponame.git
 
-curl -u 'myuser' https://api.github.com/user/repos -d '{"name":"my_repo_name_is>","description":"my_description_is"}'
+curl -u 'userTest' https://api.github.com/user/repos -d '{"name":"my_repo_name_is>","description":"my_description_is"}'
 
-or
-
-git remote add origin https://github.com/myuser/myreponame
+git remote add origin https://github.com/userTest/my_repo_name_is
 
 git push -u origin master
