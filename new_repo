@@ -3,6 +3,7 @@
 Steps:
 
 create new folder
+cd new_folder_name
 git init
 create file (README.md)
 git add file
@@ -12,8 +13,14 @@ git branch -M main
 <creating repo with github api and using curl>
 curl -u '<user>' https://api.github.com/user/repos -d '{"name":"<repo>","description":"<text>"}'
 
+<creating repo with github api and using curl with authentication header>
+curl -H "Authorization: token TOKEN_CODE_HERE" https://api.github.com/user/repos -d '{"name":"<repo>","description":"<text>"}'
+
 <add origin to repo>
 git remote add origin https://github.com/myuser/myreponame
+
+<add origin to repo using ssh_key>
+git remote add origin git@github.com:USERNAME/REPO_NAME.git
 
 <upload branch>
 git push -u <shortname> <branchname>
@@ -24,4 +31,4 @@ curl -u 'userTest' https://api.github.com/user/repos -d '{"name":"my_repo_name_i
 
 git remote add origin https://github.com/userTest/my_repo_name_is
 
-git push -u origin master
+git push -u origin main
